@@ -1,0 +1,61 @@
+MDScreen:
+    name: "start"
+    MDFloatLayout:
+        md_bg_color: 1, 1, 1, 1
+        MDLabel: 
+            text: "Math\nSolver"
+            font_name: "Mogul"
+            font_size: "55sp"
+            pos_hint: {"center_x": .2, "center_y": .7}
+            color: 1, 1, 1, 1
+            line_height: 1.1
+        Button:
+            size_hint: .55, .12
+            pos_hint: {"center_x": .28, "center_y": .83}
+            background_color: 0, 0, 0, 0
+            on_release:
+                root.manager.current = "select_sign"
+            Image:
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                source: 'Images/level-1.png'
+        Button:
+            size_hint: .55, .12
+            pos_hint: {"center_x": .83, "center_y": .72}
+            background_color: 0, 0, 0, 0
+            on_release:
+                root.manager.current = "quiz2"
+            Image:
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                source: 'Images/level-2.png'
+        Button:
+            size_hint: .55, .12
+            pos_hint: {"center_x": .43, "center_y": .61}
+            background_color: 0, 0, 0, 0
+            on_release:
+                root.manager.current = "quiz3"
+            Image:
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                source: 'Images/level-3.png'
+        Button:
+            size_hint: .55, .12
+            pos_hint: {"center_x": .28, "center_y": .43}
+            background_color: 0, 0, 0, 0
+            on_release:
+                root.manager.current = "quiz4"
+            Image:
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                source: 'Images/level-4.png'
+        Button:
+            size_hint: .55, .12
+            pos_hint: {"center_x": .75, "center_y": .21}
+            background_color: 0, 0, 0, 0
+            on_release:
+                root.manager.current = "quiz5"
+            Image:
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                source: 'Images/level-5.png'
